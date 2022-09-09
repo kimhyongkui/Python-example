@@ -3,4 +3,8 @@ high_prices = [150, 300, 430, 880, 1000]
 
 volatility = []
 for i in range(len(low_prices)) :
-    volatility.append(high_prices[i] - low_prices[i])
+    volatility.append(high_prices[i] - low_prices[i]).
+
+    tudy / 파이썬
+    연습문제(main)
+    $ g
