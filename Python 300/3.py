@@ -1,7 +1,7 @@
-low_prices  = [100, 200, 400, 800, 1000]
-high_prices = [150, 300, 430, 880, 1000]
-
-volatility = []
-for i in range(len(low_prices)) :
-    volatility.append(high_prices[i] - low_prices[i])
-print(volatility)
+ohlc = [["open", "high", "low", "close"],
+        [100, 110, 70, 100],
+        [200, 210, 180, 190],
+        [300, 310, 300, 310]]
+for row in ohlc[1:]:
+    if row[3] > row[0]:
+        print(row[1]-row[2])
