@@ -104,8 +104,8 @@ for i in range(len(my_list) - 1):
 # 179
 my_list = [100, 200, 400, 800, 1000, 1300]
 
-for i in range(1, len(my_list) - 1):
-    print(abs(my_list[i-1] + my_list[i] + my_list[i+1]) / 3)
+for i in range(0, len(my_list) - 2):
+    print(abs(my_list[i] + my_list[i+1] + my_list[i+2]) / 3)
 
 # 180
 low_prices  = [100, 200, 400, 800, 1000]
@@ -114,3 +114,4 @@ high_prices = [150, 300, 430, 880, 1000]
 volatility = []
 for i in range(len(low_prices)) :
     volatility.append(high_prices[i] - low_prices[i])
+print(volatility)
