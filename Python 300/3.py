@@ -19,3 +19,9 @@ make_url("naver")
 
 
 
+name = ['뭉치', '호두', '미소']
+age = ['8살', '6살', '2살']
+
+p = dict(zip(name,age))
+
+print(p)
