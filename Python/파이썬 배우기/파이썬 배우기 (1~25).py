@@ -157,4 +157,18 @@ num_list.sort()
 print(num_list[1])
 
 # 24 11653
+N = int(input())
+m = 2
+while N!=1:
+    if N%m == 0:
+        N = N/m
+        print(m)
+    else:
+        m += 1
+
 # 25 1789
+s = int(input())
+n = 1                          # 최대값을 구하는 문제이므로 1부터 차례대로 더해 s보다 커지면 그 개수에서 1을 뺀다.
+while n * (n + 1) / 2 <= s:    # n*(n+1)/2 = 1부터 n까지의 합의 공식
+    n += 1
+print(n - 1)
