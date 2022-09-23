@@ -152,5 +152,9 @@ else:
     print('F')
 
 # 23 10817
+num_list = list(map(int, input().split()))
+num_list.sort()
+print(num_list[1])
+
 # 24 11653
 # 25 1789
