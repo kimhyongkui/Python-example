@@ -126,3 +126,31 @@ for i in range(t):
     for i in s:
         text += int(num) * i
     print(text)
+
+# 21 2935
+A = int(input())
+B = str(input())
+C = int(input())
+
+if B == '*':
+    print(A*C)
+else:
+    print(A+C)
+
+# 22 9498
+score = int(input())
+
+if score >= 90 :
+    print('A')
+elif score >= 80 :
+    print('B')
+elif score >= 70 :
+    print('C')
+elif score >= 60 :
+    print('D')
+else:
+    print('F')
+
+# 23 10817
+# 24 11653
+# 25 1789
