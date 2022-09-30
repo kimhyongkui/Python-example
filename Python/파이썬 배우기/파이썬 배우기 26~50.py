@@ -109,3 +109,9 @@ elif M<45 and H>0:
     print(H-1,M+15)
 else:
     print(23,M+15)
+
+36
+37
+38
+39
+40
