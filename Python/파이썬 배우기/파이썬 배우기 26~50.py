@@ -110,8 +110,136 @@ elif M<45 and H>0:
 else:
     print(23,M+15)
 
-36
-37
-38
-39
-40
+# 36 7567
+plates = input()
+ans = 10 # 처음 그릇을 바닥에 놓았을 때 높이 10cm
+
+for i in range(1, len(plates)):
+    # 두 번째 그릇부터 이전 그릇과 비교 시작
+    if plates[i] == plates[i - 1]:
+        ans += 5 # 같은 방향이면 5cm 추가
+    else:
+        ans += 10 # 다른 방향이면 10cm 추가
+
+print(ans)
+
+# 37 5063
+tc = int(input())
+
+for _ in range(tc) :
+  r, e, c = map(int, input().split())
+
+  if e - c > r :
+    print("advertise")
+  elif e - c == r :
+    print("does not matter")
+  else :
+    print("do not advertise")
+
+# 38 10102
+num = int(input())
+result = input()
+a = b = 0
+for i in range(0, num):
+    if (result[i] == 'A'):
+        a = a + 1
+    elif (result[i] == 'B'):
+        b = b + 1
+
+if (a > b):
+    print('A')
+elif (a < b):
+    print('B')
+else:
+    print('Tie')
+
+# 39 10886
+import sys
+input = sys.stdin.readline
+
+a,b = 0,0
+for _ in range(int(input())):
+    if int(input()) == 0:
+        a+=1
+    else:
+        b+=1
+if a > b:
+    print("Junhee is not cute!")
+else:
+    print("Junhee is cute!")
+
+# 40 10988
+w = input()
+x = 1
+for i in range(len(w)//2):
+    if w[i] != w[-i-1]:
+        print(0)
+        x = 0
+        break
+if x == 1: print(x)
+
+# 41 5086
+while (1):
+    x, y = map(int, input().split())
+
+    if x == 0 and y == 0:
+        break
+
+    if x < y and y % x == 0:
+        print("factor")
+    elif x > y and x % y == 0:
+        print("multiple")
+    else:
+        print("neither")
+
+# 42 5717
+while True:
+    a,b = map(int,input().split(" "))
+    if a==0 and b==0:
+        break
+    print(a+b)
+
+# 43 9610
+li = [0]*5
+for _ in range(int(input())):
+    x, y = map(int, input().split())
+    if x == 0 or y == 0:
+        li[4] += 1
+    elif x > 0 and y > 0:
+        li[0] += 1
+    elif x < 0 and y > 0:
+        li[1] += 1
+    elif x < 0 and y < 0:
+        li[2] += 1
+    else:
+        li[3] += 1
+for i in range(4):
+    print(f"Q{i+1}: {li[i]}")
+print(f"AXIS: {li[4]}")
+
+# 44 8958
+n=int(input())
+for i in range(0,n):
+    count,c=0,1
+    s=list(input())
+    for j in s:
+        if j=='O':
+            count+=c
+            c+=1
+        else:
+            c=1
+    print(count)
+
+# 45 9506
+while True:
+    n = int(input())
+    if n == -1: # 입력 값이 -1이면 반복문 종료
+        break;
+    arr = []
+    for i in range(1, n):
+        if n % i == 0:
+            arr.append(i)
+    if sum(arr) == n:
+        print(n, " = ", " + ".join(str(i) for i in arr), sep="")
+    else:
+        print(n, "is NOT perfect.")
