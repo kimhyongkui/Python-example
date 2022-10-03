@@ -243,3 +243,68 @@ while True:
         print(n, " = ", " + ".join(str(i) for i in arr), sep="")
     else:
         print(n, "is NOT perfect.")
+
+# 46 10162
+t = int(input())
+
+if t % 10 != 0:
+    print(-1)
+else:
+    a = 0
+    b = 0
+    c = 0
+    a = t // 300
+    b = (t % 300) // 60
+    c = (t % 300) % 60 // 10
+    print(a, b, c)
+
+# 47 10103
+n = int(input())
+
+a_value = 100
+b_value = 100
+for _ in range(n) :
+  a, b = map(int, input().split())
+  if a < b :
+    a_value -= b
+  elif a > b :
+    b_value -= a
+
+print(a_value)
+print(b_value)
+
+# 48 10214
+t = int(input())
+
+for _ in range(t) :
+  y_value = 0
+  k_value = 0
+  for _ in range(9) :
+    y, k = map(int, input().split())
+    y_value += y
+    k_value += k
+
+  if y_value > k_value :
+    print("Yonsei")
+  elif y_value < k_value :
+    print("Korea")
+  else :
+    print("Draw")
+
+# 49 11557
+T = int(input())
+
+for _ in range(T):
+    N = int(input())
+    alcohol = []
+
+    for _ in range(N):
+        S, L = map(str, input().split())
+        alcohol.append([S, int(L)])
+
+    alcohol = sorted(alcohol, key=lambda x: x[1])
+    print(alcohol[-1][0])
+
+# 50 10757
+a, b = map(int, input().split())
+print(a+b)
