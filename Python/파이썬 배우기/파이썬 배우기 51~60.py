@@ -73,3 +73,29 @@ n = int(input())
 
 for i in range(1,n+1): #1~n까지 범위 -> 1,n+1 지정
     print(i)
+
+# 56 2742
+a = int(input())
+for i in range(a, 0, -1):
+    print(i)
+
+# 57 2739
+n = int(input())
+
+for i in range(1, 10):
+    print(n, "*", i, "=", n*i)
+
+# 58 2438
+N=int(input())
+for i in range(1, N+1):
+    print("*"*i)
+
+# 59 2439
+x = int(input())
+for i in range(1, x+1):
+    print(' '*(x-i)+"*"*i)
+
+# 60 2440
+x = int(input())
+for i in range(x, 0, -1):
+    print("*"*i)
