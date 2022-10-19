@@ -146,3 +146,47 @@ for i in range(2, N + 1):
     A[i] = A[i - 1] + A[i - 2]
 
 print(A[-1])
+
+# 66 5565
+num=int(input(''))
+
+sum=0
+
+for i in range(9):
+    n=int(input(''))
+    sum=sum+n
+
+print(num-sum)
+
+# 67 10950
+T = int(input())
+
+for i in range(T):
+    A,B = map(int,input().split())
+    print(A+B)
+
+# 68 10952
+while True:
+    a, b = map(int, input().split())
+    if a == b == 0:
+        break
+    print(a + b)
+
+# 69 10984
+for _ in range(int(input())):
+    C = G = 0
+    for i in range(int(input())):
+        c, g = map(float, input().split())
+        C += c
+        G += c*g
+    print("%d %.1f" %(C, G/C))
+
+# 70 10833
+import sys
+input = sys.stdin.readline
+
+ans = 0
+for _ in range(int(input())):
+    a,b = map(int,input().split())
+    ans += b%a
+print(ans)
