@@ -190,3 +190,41 @@ for _ in range(int(input())):
     a,b = map(int,input().split())
     ans += b%a
 print(ans)
+
+# 71 2442
+n = int(input())
+
+count = n - 1
+for i in range(1, 2*n, 2) :
+  print(' ' * count, end='')
+  print('*' * i)
+  count -= 1
+
+# 72 2443
+n = int(input())
+
+for i in range(n, 0, -1) :
+  print(' '*(n-i) + '*'*(2*i-1))
+
+# 73 2444
+n = int(input())
+
+for i in range(1, n) :
+  print(' '*(n-i) + '*'*(2*i-1))
+
+for i in range(n, 0, -1) :
+  print(' '*(n-i) + '*'*(2*i-1))
+
+# 74 2522
+N = int(input())
+for i in range(1, N+1):
+    print(' '*(N-i) + '*'*i)
+for i in range(1, N):
+    print(' '*(i) + '*'*(N-i))
+
+# 75 2523
+n = int(input())
+for i in range(1, n + 1):
+    print("*" * i)
+for i in range(n - 1, 0, -1):
+    print("*" * i)
