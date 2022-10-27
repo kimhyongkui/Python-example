@@ -38,3 +38,37 @@ n=0
 for i in range(5):
     n+=int(input())
 print(n)
+
+# 81 10178
+t = int(input())
+
+for i in range(t):
+    c, f = map(int, input().split())
+    print("You get {0} piece(s) and your dad gets {1} piece(s).".format(c // f, c % f))
+
+# 82 9295
+t = int(input())
+
+for i in range(1, t + 1) :
+  a, b = map(int, input().split())
+  print("Case ", i, ": ", a + b, sep='')
+
+# 83 10569
+x = int(input())
+for i in range(x):
+    a, b = map(int, input().split())
+    c = 2 - a + b
+    print(c)
+
+# 84 2921
+n = int(input())
+sum = 0
+for i in range(0, n + 1):
+    for j in range(i, n + 1):
+        sum += i + j
+print(sum)
+
+# 85 10995
+N = int(input())
+for i in range(N):
+    print("* "*N if i%2 == 0 else " *"*N)
